@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "flatironschool",
+    "password": null,
+    "database": "gameswap",
+    "host": "localhost",
+    "dialect": "postgresql"
+  },
+  "test": {
+    "username": "flatironschool",
+    "password": null,
+    "database": "gameswap",
+    "host": "localhost",
+    "dialect": "postgresql"
+  },
+  "production": {
+    "username": "flatironschool",
+    "password": null,
+    "database": "gameswap",
+    "host": "localhost",
+    "dialect": "postgresql"
+  }
+}
