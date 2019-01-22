@@ -25,6 +25,14 @@ router.get('/', function(req, res, next) {
 })
 
 
+router.post('/', (req, res) => {
+  debugger
+  models.User.create({
+    username: req.body.users
+  }).then((result) => res.json(result))
+})
+
+
 // router.post('/', function(req, res, next) => {
 //   models.User.findAll({where: {id: 1}}).then(function(user) {
 //     res.send(user)
@@ -32,11 +40,11 @@ router.get('/', function(req, res, next) {
 // });
 
 
-router.post('/', (req, res) => {
-  console.log(req.body);
-  res.send(
-    `I received your POST request. This is what you sent me: ${req.body.users}`,
-  );
-});
+// router.post('/', (req, res) => {
+//   console.log(req.body);
+//   res.send(
+//     `I received your POST request. This is what you sent me: ${req.body.users}`
+//   )
+// })
 
 module.exports = router;
